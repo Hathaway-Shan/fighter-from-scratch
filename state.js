@@ -28,4 +28,14 @@ export function setMessage(message) {
     state.message = message;
 }
 
-export function addMonster()
+export function addMonster(monster) {
+    state.monsters.push(monster);
+}
+
+export function removeMonster(monster) {
+    const index = state.monsters.indexOf(monster);
+    if (index !== -1) {
+        state.mushrooms.splice(index, 1);
+    }
+}
+
