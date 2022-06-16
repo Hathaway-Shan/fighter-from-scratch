@@ -17,16 +17,24 @@ main {
 }
 
 #fighter-display {
-    background-color: blue;
+    /* background-color: blue; */
     text-align: center;
 }
 
 #game-text {
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     text-align: center;
 }
 
 #monster-display {
-    background-color: brown;
+    /* background-color: brown; */
     text-align: center;
+}
+
+li {
+    color: white;
+    font-weight: bolder;
+    background-color: rgb(60, 65, 65);
+    border-radius: 5px;
+    padding: 5px
 }
