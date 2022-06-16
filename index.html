@@ -27,11 +27,17 @@
         <div>
             <section id="fighter-display">
             <h2>fighter display</h2>
-                <label>fight some monsters!</label>
+                <label>find some monsters!</label>
+<!-- button input for find monster logic -->
+                <button>Sortie!</button>
 <!-- button input for fight logic -->
-                <button>fight!</button>
+                <button>Fight!</button>
 <!-- hero displays here -->
                 <div id="hero-box">
+                    <label>Hero Health:</label>
+                    <p>10</p>
+                </div>
+                <div>
                     <image id="hero" src="/assets/hero.png"></image>
                 </div>
             </section>
@@ -40,12 +46,17 @@
         <div>
             <section id="game-text">
             <h2>game text</h2>
+<!-- message display element -->
+            <div>
+                <p id="game-text">message display</p> 
+            </div>
 <!-- defeated monsters display here -->
-                <div id="defeated-monster-box"></div>
+            <div id="defeated-monster-box">
                 <image id="headstone" src="/assets/headstone.png"></image>
                 <ul id="defeated-monsters">
                     <li>jim the goblin</li>
                 </ul>
+            </div>
             </section>
         </div>
 
@@ -55,10 +66,21 @@
             <section id="monster-display">
             <h2>monster display</h2>
 <!-- monster images display here -->
-                <div idS="monster-box">
+                <div id="monster-box">
+                    <div>
+                        <label id="monster-name">Greg the goblin</label>   
+                    </div>
+                    <label>Monster Health:</label>
+                    <p>10</p>
+                </div>
+<!-- Monster image display -->
+                <div id="monster-image">
                     <image id="monster" src="/assets/monster.png"></image>
                 </div>
-
+            </section>
+            <section id="battle-box">
+                <image id="monster2" src="/assets/monster2.png"></image>
+                    <image id="monster3" src="/assets/monster3.png"></image>
             </section>
         </div>
         

@@ -8,12 +8,32 @@ main {
 
 }
 
+#monster-box {
+    background-color: burlywood;
+}
+
 @media (min-width: 400px) {
     main {
         grid-template-columns: 1fr 1fr 1fr;
         justify-items: center;
         text-align: center;
     }
+}
+
+#monster-box {
+    background-color: burlywood;
+    border-radius: 5px;
+}
+
+#hero-box {
+    background-color: burlywood;
+    border-radius: 5px;
+}
+
+#game-text {
+    background-color: burlywood;
+    border-radius: 5px;
+    
 }
 
 #fighter-display {
@@ -28,7 +48,9 @@ main {
 
 #monster-display {
     /* background-color: brown; */
+    color: rgb(186, 22, 22);
     text-align: center;
+    
 }
 
 li {
