@@ -4,8 +4,10 @@ const state = {};
 // initialize state, also used in test
 export function initialize() {
     // What is the initial shape of state?
-    state.hp = 10;
-    state.message = '';
+    state.playerHealth = 10;
+    state.death = 0;
+    state.monsterKills = 0;
+    state.message = [];
     state.type = ['monster', 'monster2', 'monster3'];
     state.damage = [0, 0, 0, 1, 1, 1, 2, 2, 3];
     state.monsters = [
