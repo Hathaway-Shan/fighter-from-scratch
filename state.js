@@ -1,21 +1,36 @@
 // set state to an empty object
 const state = {};
 
+state.message = [];
+state.player = [];
+state.monsters = [];
+state.damage = [];
+state.health = [];
+
 // initialize state, also used in test
 export function initialize() {
-    // What is the initial shape of state?
-    state.playerHealth = 10;
-    state.death = 0;
-    state.monsterKills = 0;
-    state.message = [];
-    state.type = ['monster', 'monster2', 'monster3'];
-    state.damage = [0, 0, 0, 1, 1, 1, 2, 2, 3];
-    state.monsters = [
-        { name: 'Heathcliff', health: 4, },
-        { name: 'Lloyd', health: 4, },
-        { name: 'Gilgamesh', health: 5, },
-    ];
+    // What should state look like on load?
+    state.player = [{
+        name: 'Sir Cid',
+        health: 10,
+        dead: false,
+        kills: 0,
+    }];
+    state.monsters = [{
+        name: 'Lloyd',
+        health: 4,
+        enemy: true,
+        dead: false,
+    },
+    {
+        name: 'Gilgamesh',
+        health: 5,
+        enemy: true,
+        dead: false,
+    }];
     
+    state.message = ['click enemies to defend yourself!'];
+    state.damage = [0, 0, 1, 1, 1, 2, 2];
 }
 // call initialize
 initialize();
