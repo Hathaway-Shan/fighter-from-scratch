@@ -27,12 +27,14 @@ export function initialize() {
         health: getRandomItem(state.health),
         enemy: true,
         dead: false,
+        class: 'warrior'
     },
     {
         name: 'Lloyd',
         health: getRandomItem(state.health),
         enemy: true,
         dead: false,
+        class: 'warrior'
     }];
     
     state.message = ['click enemies to defend yourself!'];
@@ -57,7 +59,7 @@ export function addMonster(monster) {
 export function removeMonster(monster) {
     const index = state.monsters.indexOf(monster);
     if (index !== -1) {
-        state.mushrooms.splice(index, 1);
+        state.monsters.splice(index, 1);
     }
 }
 

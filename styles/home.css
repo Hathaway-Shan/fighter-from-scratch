@@ -5,11 +5,6 @@ body {
 
 main {
     display:grid;
-
-}
-
-#monster-box {
-    background-color: burlywood;
 }
 
 @media (min-width: 400px) {
@@ -53,15 +48,10 @@ main {
     
 }
 
-.hidden {
-    display: none !important;
+input {
+    transition: box-shadow 300ms ease-out;
 }
 
-
-li {
-    color: white;
-    font-weight: bolder;
-    background-color: rgb(60, 65, 65);
-    border-radius: 5px;
-    padding: 5px
+input:focus {
+    box-shadow: 0px 0px 5px var(--light-blue-bg-color);
 }
