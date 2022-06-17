@@ -26,7 +26,7 @@ export function Monster({ monster }) {
 
 
     const box1 = document.getElementById('monster-box');
-    monBox.append(nameSpan, healthSpan);
+    monBox.append('Name: ', nameSpan, '- Health ', healthSpan);
     box1.append(monBox);
 
     if (monster.dead === false) {

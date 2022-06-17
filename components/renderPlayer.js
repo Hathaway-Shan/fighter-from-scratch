@@ -14,6 +14,19 @@ export default function renderPlayer(root) {
 }
 
 export function Player({ player }) {
+
+    const monBox = document.createElement('div');
+    let nameSpan = document.createElement('span');
+    nameSpan.textContent = player.name;
+
+    let healthSpan = document.createElement('span');
+    healthSpan.textContent = player.health;
+
+
+    const box1 = document.getElementById('player-box');
+    monBox.append('Name: ', nameSpan, '- Health ', healthSpan);
+    box1.append(monBox);
+    
     if (player.dead === false) {
         const img = document.createElement('img');
         img.src = 'assets/' + player.name + '.png';
