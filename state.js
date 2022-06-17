@@ -15,9 +15,7 @@ export function initialize() {
         { name: 'Lloyd', health: 4, },
         { name: 'Gilgamesh', health: 5, },
     ];
-    // For example:
-    // state.game = null;
-    // state.pastGames = [];
+    
 }
 // call initialize
 initialize();

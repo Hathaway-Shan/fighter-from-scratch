@@ -1,4 +1,4 @@
-export default function createMonster(root) {
+export default function renderMonster(root) {
     const container = root.querySelector('#monster-image');
 
     return ({ monsters }) => {
