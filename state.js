@@ -1,3 +1,6 @@
+//the rng item grabber will be how we sort damage and health
+import { getRandomItem } from './utils.js';
+
 // set state to an empty object
 const state = {};
 
@@ -11,20 +14,23 @@ state.health = [];
 export function initialize() {
     // What should state look like on load?
     state.player = [{
-        name: 'Sir Cid',
+        name: 'Cid',
         health: 10,
         dead: false,
         kills: 0,
     }];
+
+    state.health = [3, 4, 5];
+
     state.monsters = [{
-        name: 'Lloyd',
-        health: 4,
+        name: 'Gilgamesh',
+        health: getRandomItem(state.health),
         enemy: true,
         dead: false,
     },
     {
-        name: 'Gilgamesh',
-        health: 5,
+        name: 'Lloyd',
+        health: getRandomItem(state.health),
         enemy: true,
         dead: false,
     }];
@@ -40,7 +46,8 @@ export default state;
 // export dispatch functions that modify state
 
 export function setMessage(message) {
-    state.message = message;
+// since message is now an array we have to push onto it
+    state.message.push(message);
 }
 
 export function addMonster(monster) {

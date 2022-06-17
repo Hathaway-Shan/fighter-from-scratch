@@ -1,5 +1,7 @@
+
+
 export default function renderMonster(root) {
-    const container = root.querySelector('#monster-image');
+    const container = root;
 
     return ({ monsters }) => {
 //clear out container
@@ -13,8 +15,12 @@ export default function renderMonster(root) {
 }
 
 export function Monster({ monster }) {
-    const img = document.createElement('img');
-    img.src = 'assets/' + monster.type + '.png';
-    img.alt = monster.type;
-    return img;
+    if (monster.dead === false) {
+        const img = document.createElement('img');
+        img.src = 'assets/' + monster.name + '.png';
+        return img;} 
+    if (monster.dead === true) {
+        const img = document.createElement('img');
+        img.src = 'assets/' + 'dead-' + monster.name + '.png';
+        return img;} 
 }

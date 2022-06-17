@@ -35,14 +35,14 @@
                 </form>
 <!-- button input for fight logic -->
     
-<!-- hero displays here -->
+<!-- player displays section -->
                 <div id="hero-box">
                     <label>Hero Health:</label>
                     <p>10</p>
+<!-- player image displays here -->
                 </div>
-                <div>
-                    <image id="hero" src="/assets/hero.png"></image>
-                </div>
+                <div id="player-image"></div>
+
             </section>
         </div>
         
@@ -56,9 +56,9 @@
 <!-- defeated monsters display here -->
             <div id="defeated-monster-box">
                 <image id="headstone" src="/assets/headstone.png"></image>
-                <ul id="defeated-monsters">
-                    <li>jim the goblin</li>
-                </ul>
+                <p>You have defeated</p>
+                <span id="kill-count">0</span>
+                <p>monsters</p>
             </div>
             </section>
         </div>
@@ -77,16 +77,10 @@
                     <p>10</p>
                 </div>
 <!-- Monster image display -->
-                <div id="monster-image">
-                    
-    
-                </div>
+                <div id="monster-image"></div>
+
             </section>
-            <section id="battle-box" class="hidden">
-                <image id="monster" src="/assets/monster.png"></image>
-                <image id="monster2" src="/assets/monster2.png"></image>
-                <image id="monster3" src="/assets/monster3.png"></image>
-            </section>
+            
         </div>
         
     </main>
