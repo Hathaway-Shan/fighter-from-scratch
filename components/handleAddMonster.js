@@ -4,7 +4,6 @@ export default function createAddMonster(root, { handleAddMonster }) {
         e.preventDefault();
         const data = new FormData(form);
         const name = data.get('name');
-        console.log(name);
         handleAddMonster(name);
         form.reset();
     });
