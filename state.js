@@ -1,5 +1,6 @@
 //the rng item grabber will be how we sort damage and health
 import { getRandomItem } from './utils.js';
+import display from './app.js';
 
 // set state to an empty object
 const state = {};
@@ -65,6 +66,17 @@ export function addMonster(name) {
         class: 'warrior'
     };
     state.monsters.push(monster);
+}
+
+//which monster are we fighting? base our argument on that
+//the event listener in Monster knows which monster we are fighting
+export function mortalKombat(monster) {
+//instead of adding player to the argument we can define player from the array
+// since there's only one
+    let player = state.player[0];
+    monster.health -= 1;
+    player.health -= 1;
+    console.log(player.health);
 }
 
 export function removeMonster(monster) {
