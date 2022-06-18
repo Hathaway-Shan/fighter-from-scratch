@@ -1,4 +1,5 @@
 const box1 = document.getElementById('monster-box');
+// import { getRandomItem } from '../utils.js';
 
 export default function renderMonster(root) {
     const container = root;
@@ -34,7 +35,11 @@ export function Monster({ monster }) {
         const img = document.createElement('input');
         img.type = 'image';
         img.src = 'assets/' + monster.class + '.png';
-        return img;} 
+        return img;
+        // input.addEventListener('click', () => {
+        //     handleAttack(player, monster)
+        // });
+    } 
     if (monster.dead === true) {
         const img = document.createElement('img');
         img.src = 'assets/' + 'dead-' + monster.class + '.png';

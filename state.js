@@ -57,7 +57,6 @@ export function setMessage(message) {
 // }
 
 export function addMonster(name) {
-    console.log(name);
     const monster = {
         name,
         health: getRandomItem(state.health),
@@ -65,7 +64,6 @@ export function addMonster(name) {
         dead: false,
         class: 'warrior'
     };
-    console.log(state);
     state.monsters.push(monster);
 }
 
