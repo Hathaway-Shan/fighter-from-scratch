@@ -37,7 +37,7 @@ const newMonster = createAddMonster(document.querySelector('#form-input'), {
 });
 
 // Roll-up display function that renders (calls with state) each component
-function display() {
+export default function display() {
 //the constant which is a function now runs the code targeting 
 //the HTML element in the display function
     newMonster({});

@@ -74,10 +74,28 @@ export function mortalKombat(monster) {
 //instead of adding player to the argument we can define player from the array
 // since there's only one
     let player = state.player[0];
-    monster.health -= 1;
-    player.health -= 1;
-    console.log(player.health);
+
+    let damageToMonster = getRandomItem(state.damage);
+    let damageToPlayer = getRandomItem(state.damage);
+    
+    monster.health -= damageToMonster;
+    player.health -= damageToPlayer;
+    state.message.push(`Your attack dealt ${damageToMonster} damage! ${monster.name} struck you back for ${damageToPlayer}!`);
+    
+    if (monster.health <= 0) {
+        monster.dead = true;
+        player.kills++;
+        state.message.push(`${monster.name} has been defeated`);
+    }
+    if (player.health <= 0) {
+        player.dead = true;
+        state.message.push(`Oh no! ${player.name} has been slain!`);
+    }
+
+    display();
 }
+
+
 
 export function removeMonster(monster) {
     const index = state.monsters.indexOf(monster);
