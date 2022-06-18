@@ -24,6 +24,7 @@ export function Player({ player }) {
 
 
     const box1 = document.getElementById('player-box');
+    box1.innerHTML = '';
     monBox.append('Name: ', nameSpan, '- Health ', healthSpan);
     box1.append(monBox);
     

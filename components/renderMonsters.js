@@ -1,11 +1,13 @@
-
+const box1 = document.getElementById('monster-box');
 
 export default function renderMonster(root) {
     const container = root;
 
+
     return ({ monsters }) => {
 //clear out container
         container.innerHTML = '';
+        box1.innerHTML = '';
         for (let monster of monsters) {
             let doge = { monster };
             let newDoge = Monster(doge);
@@ -24,8 +26,6 @@ export function Monster({ monster }) {
     let healthSpan = document.createElement('span');
     healthSpan.textContent = monster.health;
 
-
-    const box1 = document.getElementById('monster-box');
     monBox.append('Name: ', nameSpan, '- Health ', healthSpan);
     box1.append(monBox);
 

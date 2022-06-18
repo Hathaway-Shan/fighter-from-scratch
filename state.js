@@ -52,7 +52,20 @@ export function setMessage(message) {
     state.message.push(message);
 }
 
-export function addMonster(monster) {
+// export function addMonster(monster) {
+//     state.monsters.push(monster);
+// }
+
+export function addMonster(name) {
+    console.log(name);
+    const monster = {
+        name,
+        health: getRandomItem(state.health),
+        enemy: true,
+        dead: false,
+        class: 'warrior'
+    };
+    console.log(state);
     state.monsters.push(monster);
 }
 

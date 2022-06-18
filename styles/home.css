@@ -15,43 +15,33 @@ main {
     }
 }
 
-#monster-box {
+#form-input {
     background-color: burlywood;
-    border-radius: 5px;
 }
 
-#hero-box {
+#monster-box {
     background-color: burlywood;
+}
+
+#player-box {
+    background-color: rgb(46, 112, 8);
     border-radius: 5px;
 }
 
 #game-text {
-    background-color: burlywood;
-    border-radius: 5px;
+    background-color: rgb(234, 142, 36);
     
 }
 
 #fighter-display {
-    /* background-color: blue; */
     text-align: center;
 }
 
 #game-text {
-    /* background-color: blueviolet; */
     text-align: center;
 }
 
 #monster-display {
-    /* background-color: brown; */
-    color: rgb(186, 22, 22);
     text-align: center;
     
-}
-
-input {
-    transition: box-shadow 300ms ease-out;
-}
-
-input:focus {
-    box-shadow: 0px 0px 5px var(--light-blue-bg-color);
 }

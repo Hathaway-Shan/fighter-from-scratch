@@ -3,7 +3,10 @@ export default function createAddMonster(root, { handleAddMonster }) {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
         const data = new FormData(form);
-        handleAddMonster(data.get('name'));
+        const name = data.get('name');
+        console.log(name);
+        handleAddMonster(name);
+        form.reset();
     });
     return () => { };
 }
