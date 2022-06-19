@@ -1,4 +1,5 @@
 export default function createAddMonster(root, { handleAddMonster }) {
+    console.log(root);
     const form = root.querySelector('form');
     form.addEventListener('submit', (e) => {
         e.preventDefault();

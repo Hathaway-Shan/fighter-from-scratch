@@ -97,10 +97,10 @@ export function mortalKombat(monster) {
 
 
 
-export function removeMonster(monster) {
-    const index = state.monsters.indexOf(monster);
-    if (index !== -1) {
-        state.monsters.splice(index, 1);
-    }
-}
+// export function removeMonster(monster) {
+//     const index = state.monsters.indexOf(monster);
+//     if (index !== -1) {
+//         state.monsters.splice(index, 1);
+//     }
+// }
 

@@ -4,15 +4,13 @@
 import renderMonster from './components/renderMonsters.js';
 import renderPlayer from './components/renderPlayer.js';
 import createMessage from './components/Message.js';
-import state from './state.js';
+// import state from './state.js';
 import createAddMonster from './components/handleAddMonster.js';
-import { addMonster } from './state.js';
+// import { addMonster } from './state.js';
 // import state and dispatch functions
-// import state, {
-//     updateMonster,
-//     updateHealth,
-//     removeMonster,
-// } from './state.js'
+import state, {
+    addMonster,
+} from './state.js';
 
 // Create each component:
 //imports the component function that targets the html element 

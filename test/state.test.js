@@ -1,6 +1,10 @@
+
+
 import state, {
     initialize,
+    addMonster,
     // import dispatch functions
+    // mortalKombat,
 } from '../state.js';
 
 // make sure state is at known starting point
@@ -8,14 +12,14 @@ QUnit.module('state', { beforeEach: initialize });
 
 const test = QUnit.test;
 
-test('the first state test...', (expect) => {
-    // what is the initial expected state?
-
-    // use the action
-
-    // what should the state be now?
+// test('runs damage and message displays', (expect) => {
+//what is the initial state
 
 
-    // remove this line when starting your test
-    expect.deepEqual(state, {});
+// });
+test('adds a monster', (expect) => {
+    expect.equal(state.monsters.length, 2);
+    addMonster('Heathcliff');
+    expect.equal(state.monsters.length, 3);
 });
+
