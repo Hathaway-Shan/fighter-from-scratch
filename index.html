@@ -22,7 +22,59 @@
         <h1>Web MVC UI</h1>
     </header>
 
-    <main></main>
+    <main>
+        
+        <div>
+            <section id="fighter-display">
+<!-- button input for find monster logic -->
+                <div id="form-input">
+                <form>
+                    <label>Type and enter foe names to challenge them!</label>
+<!-- forms can take the name property to help aim js at them -->
+                    <input name="name"> 
+                </form>
+                </div>
+<!-- button input for fight logic -->
+    
+<!-- player displays section -->
+                <div id="player-box"></div>                 
+<!-- player image displays here -->
+                <div id="player-image"></div>
+
+            </section>
+        </div>
+        
+        <div>
+            <section id="game-text">
+            <h2>Game Text</h2>
+<!-- message display element -->
+            <div>
+                <p id="game-text"></p> 
+            </div>
+<!-- defeated monsters display here -->
+            <div id="defeated-monster-box">
+                <image id="headstone" src="/assets/headstone.png"></image>
+                <p>You have defeated</p>
+                <span id="kill-count">0</span>
+                <p>monsters</p>
+            </div>
+            </section>
+        </div>
+
+        
+        </section>
+        <div>
+            <section id="monster-display">
+<!-- monster display section -->
+                <div id="monster-box"></div>
+<!-- Monster image display -->
+                <div id="monster-image"></div>
+
+            </section>
+            
+        </div>
+        
+    </main>
 
     <footer>&copy;2022 Aspiring Software Developer</footer>
 

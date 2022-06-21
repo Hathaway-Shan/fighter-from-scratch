@@ -1,1 +1,47 @@
 /* CSS for home page (index.html) */
+body {
+    background: url('/assets/battle-background.png');
+}
+
+main {
+    display:grid;
+}
+
+@media (min-width: 400px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+}
+
+#form-input {
+    background-color: burlywood;
+}
+
+#monster-box {
+    background-color: burlywood;
+}
+
+#player-box {
+    background-color: rgb(46, 112, 8);
+    border-radius: 5px;
+}
+
+#game-text {
+    background-color: rgb(234, 142, 36);
+    
+}
+
+#fighter-display {
+    text-align: center;
+}
+
+#game-text {
+    text-align: center;
+}
+
+#monster-display {
+    text-align: center;
+    
+}
