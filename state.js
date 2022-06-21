@@ -73,6 +73,7 @@ export function addMonster(name) {
 export function mortalKombat(monster) {
 //instead of adding player to the argument we can define player from the array
 // since there's only one
+    
     let player = state.player[0];
 
     let damageToMonster = getRandomItem(state.damage);
@@ -94,10 +95,10 @@ export function mortalKombat(monster) {
 
     display();
 }
-
+//might add this later commenting out for now
 // export function removeMonster(monster) {
 //     const index = state.monsters.indexOf(monster);
-//     if (index !== -1) {
+//     if (monster.dead === true) {
 //         state.monsters.splice(index, 1);
 //     }
 // }
