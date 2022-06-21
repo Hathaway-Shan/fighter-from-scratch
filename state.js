@@ -95,8 +95,6 @@ export function mortalKombat(monster) {
     display();
 }
 
-
-
 // export function removeMonster(monster) {
 //     const index = state.monsters.indexOf(monster);
 //     if (index !== -1) {
